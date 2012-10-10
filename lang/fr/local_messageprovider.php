@@ -27,5 +27,4 @@
 $string['messageprovider:newselfregistration'] = 'Notification d\'une nouvelle inscription';
 $string['pluginname'] = 'Message provider';
 $string['subject'] = '{$a->sitename}: Nouvelle demande de compte pour {$a->userfullname}';
-$string['content'] = 'Une nouvelle demande de compte a eu lieu pour {$a->userfullname} ({$a->username}, 
-{$a->email}) de {$a->city}, {$a->country}. Voir son profil {$a->userprofilelink} pour plus de détails.';
+$string['content'] = 'Une nouvelle demande de compte a eu lieu pour {$a->userfullname} ({$a->username}, {$a->email}) de {$a->city}, {$a->country}. Voir son profil {$a->userprofilelink} pour plus de détails.';

@@ -27,5 +27,4 @@
 $string['messageprovider:newselfregistration'] = 'New self registration notification';
 $string['pluginname'] = 'Message provider';
 $string['subject'] = '{$a->sitename}: New self-registration account for {$a->userfullname}';
-$string['content'] = 'A new self-registration account has been created for {$a->userfullname} ({$a->username}, 
-{$a->email}) from {$a->city}, {$a->country}. See {$a->userprofilelink} profile for more details.';
+$string['content'] = 'A new self-registration account has been created for {$a->userfullname} ({$a->username}, {$a->email}) from {$a->city}, {$a->country}. See {$a->userprofilelink} profile for more details.';

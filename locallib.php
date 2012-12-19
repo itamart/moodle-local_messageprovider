@@ -35,23 +35,23 @@ class self_registration_handler {
         if (empty($user->auth) or $user->auth !== 'email') {
             return true;
         }
-        
-		// Prepare message
+
+        // Prepare message
         $userfullname = fullname($user);
         $userprofilelink = html_writer::link(new moodle_url('/user/view.php', array('id' => $user->id)), $userfullname);
 
-		$sitename = format_string($SITE->fullname);
+        $sitename = format_string($SITE->fullname);
         $subjectdata = (object) array(
             'sitename' => $sitename,
             'userfullname' => $userfullname
         );
-		$subject = get_string('subject', 'local_messageprovider', $subjectdata);
+        $subject = get_string('subject', 'local_messageprovider', $subjectdata);
         $user->userprofilelink = $userprofilelink;
         $user->userfullname = $userfullname;
-		$content = get_string('content', 'local_messageprovider', $user);
-		$contenthtml = text_to_html($content, false, false, true);
-	    $admin = get_admin();
-		
+        $content = get_string('content', 'local_messageprovider', $user);
+        $contenthtml = text_to_html($content, false, false, true);
+        $admin = get_admin();
+
         // Send message
         $message = new object;
         $message->siteshortname   = format_string($SITE->shortname);

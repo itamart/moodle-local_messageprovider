@@ -34,4 +34,11 @@ $messageproviders = array (
         ),
     ),
 
+    'coursecompleted' => array (
+        'capability' => 'moodle/site:config',
+        'defaults' => array(
+            'email' => MESSAGE_PERMITTED + MESSAGE_DEFAULT_LOGGEDOFF,
+            'popup' => MESSAGE_PERMITTED + MESSAGE_DEFAULT_LOGGEDIN,
+        ),
+    ),
 );

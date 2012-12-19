@@ -24,7 +24,13 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['messageprovider:newselfregistration'] = 'New self registration notification';
 $string['pluginname'] = 'Message provider';
+
+$string['messageprovider:newselfregistration'] = 'New self registration notification';
 $string['subject'] = '{$a->sitename}: New self-registration account for {$a->userfullname}';
 $string['content'] = 'A new self-registration account has been created for {$a->userfullname} ({$a->username}, {$a->email}) from {$a->city}, {$a->country}. See {$a->userprofilelink} profile for more details.';
+
+/* Course completed */
+$string['messageprovider:coursecompleted'] = 'A course has been completed';
+$string['cc_subject'] = '{$a->fullname}: course completed!';
+$string['cc_content'] = 'The course {$a->coursefullname} has been completed by {$a->userfullname}. See the course {$a->coursereportlink}.';

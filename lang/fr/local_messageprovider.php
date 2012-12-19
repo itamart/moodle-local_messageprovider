@@ -14,7 +14,6 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 /**
  * Language strings
  *
@@ -24,7 +23,14 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['messageprovider:newselfregistration'] = 'Notification d\'une nouvelle inscription';
 $string['pluginname'] = 'Message provider';
+
+$string['messageprovider:newselfregistration'] = 'Notification d\'une nouvelle inscription';
 $string['subject'] = '{$a->sitename}: Nouvelle demande de compte pour {$a->userfullname}';
 $string['content'] = 'Une nouvelle demande de compte a eu lieu pour {$a->userfullname} ({$a->username}, {$a->email}) de {$a->city}, {$a->country}. Voir son profil {$a->userprofilelink} pour plus de détails.';
+
+
+/* Course completed */
+$string['messageprovider:coursecompleted'] = 'A cours était terminé';
+$string['cc_subject'] = '{$a->fullname}: cours terminé!';
+$string['cc_content'] = '{$a->userfullname} a terminé le cours {$a->coursefullname}. Voir le {$a->coursereportlink} de cours.';

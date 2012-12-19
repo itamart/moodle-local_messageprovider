@@ -35,4 +35,10 @@ $handlers = array (
         'internal'         => 1,
     ),
 
+    'course_completed' => array (
+        'handlerfile'      => '/local/messageprovider/locallib.php',
+        'handlerfunction'  => array('completion_course_handler', 'notify_admin'),
+        'schedule'         => 'instant',
+        'internal'         => 1,
+    ),
 );

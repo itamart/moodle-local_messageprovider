@@ -20,7 +20,7 @@
  *
  * @package    local
  * @subpackage messageprovider
- * @copyright  2012 Itamar Tzadok 
+ * @copyright  2012 Itamar Tzadok
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -35,4 +35,10 @@ $handlers = array (
         'internal'         => 1,
     ),
 
+    'course_completed' => array (
+        'handlerfile'      => '/local/messageprovider/locallib.php',
+        'handlerfunction'  => array('completion_course_handler', 'notify_admin'),
+        'schedule'         => 'instant',
+        'internal'         => 1,
+    ),
 );

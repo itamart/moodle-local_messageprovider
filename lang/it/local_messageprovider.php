@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Language strings
+ * Stringhe internazionalizzazione.
  *
  * @package    local
  * @subpackage messageprovider
@@ -26,11 +26,12 @@
 
 $string['pluginname'] = 'Message provider';
 
-$string['messageprovider:newselfregistration'] = 'New self registration notification';
-$string['subject'] = '{$a->sitename}: New self-registration account for {$a->userfullname}';
-$string['content'] = 'A new self-registration account has been created for {$a->userfullname} ({$a->username}, {$a->email}) from {$a->city}, {$a->country}. See {$a->userprofilelink} profile for more details.';
+$string['messageprovider:newselfregistration'] = 'Notifiche di una nuova iscrizione via email';
+$string['subject'] = '{$a->sitename}: Nuovo account via email per {$a->userfullname}';
+$string['content'] = 'Un nuovo accout è stato creato per {$a->userfullname} ({$a->username}, {$a->email}) di {$a->city}, {$a->country}. Per vedere il suo profilo: {$a->userprofilelink}.';
+
 
 /* Course completed */
-$string['messageprovider:coursecompleted'] = 'A course has been completed';
-$string['cc_subject'] = '{$a->sitename}: course {$a->coursefullname} completed!';
-$string['cc_content'] = 'The course {$a->coursefullname} has been completed by {$a->userfullname}. See the course {$a->coursereportlink}.';
+$string['messageprovider:coursecompleted'] = 'Corso completato';
+$string['cc_subject'] = '{$a->sitename}: corso {$a->coursefullname} completato!';
+$string['cc_content'] = '{$a->userfullname} ha completato il corso {$a->coursefullname}. Guarda il {$a->coursereportlink} del corso.';

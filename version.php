@@ -24,7 +24,7 @@
 defined('MOODLE_INTERNAL') or die;
 
 $plugin->component = 'local_messageprovider';
-$plugin->version  = 2012121901;
+$plugin->version  = 2012122004;
 $plugin->release  = '1.0.0';
 $plugin->requires = 2010112400;
 $plugin->maturity = MATURITY_STABLE;

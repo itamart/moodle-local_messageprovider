@@ -32,5 +32,5 @@ $string['content'] = 'Une nouvelle demande de compte a eu lieu pour {$a->userful
 
 /* Course completed */
 $string['messageprovider:coursecompleted'] = 'A cours était terminé';
-$string['cc_subject'] = '{$a->fullname}: cours terminé!';
+$string['cc_subject'] = '{$a->sitename}: cours {$a->coursefullname} terminé!';
 $string['cc_content'] = '{$a->userfullname} a terminé le cours {$a->coursefullname}. Voir le {$a->coursereportlink} de cours.';

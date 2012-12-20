@@ -80,9 +80,6 @@ class completion_course_handler {
     public static function notify_admin($course_completion) {
         global $DB, $CFG, $SITE;
 
-        // Prepare message
-        $subject = get_string('cc_subject', 'local_messageprovider', $SITE);
-
         /* Getting user infos */
         $user = $DB->get_record('user',
                                 array('id' => $course_completion->userid));
@@ -90,6 +87,14 @@ class completion_course_handler {
         /* Getting course infos */
         $course = $DB->get_record('course',
                                   array('id' => $course_completion->course));
+
+        // Prepare message
+        $subjectdata = (object) array(
+                                      'sitename' => $SITE->fullname,
+                                      'coursefullname' => $course->fullname,
+                                      );
+        $subject = get_string('cc_subject', 'local_messageprovider',$subjectdata);
+
 
         $coursereportlink = html_writer::link(new moodle_url('/report/completion/index.php',
                                                              array('course' => $course->id)), 'report');
@@ -99,7 +104,6 @@ class completion_course_handler {
                                       'userfullname' => fullname($user),
                                       'coursereportlink' => $coursereportlink,
                                       );
-
         $content = get_string('cc_content',
                               'local_messageprovider', $contentdata);
 

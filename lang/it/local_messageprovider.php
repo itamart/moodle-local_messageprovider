@@ -33,5 +33,5 @@ $string['content'] = 'Un nuovo accout è stato creato per {$a->userfullname} ({$
 
 /* Course completed */
 $string['messageprovider:coursecompleted'] = 'Corso completato';
-$string['cc_subject'] = '{$a->fullname}: corso completato!';
-$string['cc_content'] = '{$a->userfullname} ha completato con il corso  {$a->coursefullname}. Guarda il {$a->coursereportlink} del corso.';
+$string['cc_subject'] = '{$a->sitename}: corso {$a->coursefullname} completato!';
+$string['cc_content'] = '{$a->userfullname} ha completato il corso {$a->coursefullname}. Guarda il {$a->coursereportlink} del corso.';

@@ -32,5 +32,5 @@ $string['content'] = 'A new self-registration account has been created for {$a->
 
 /* Course completed */
 $string['messageprovider:coursecompleted'] = 'A course has been completed';
-$string['cc_subject'] = '{$a->fullname}: course completed!';
+$string['cc_subject'] = '{$a->sitename}: course {$a->coursefullname} completed!';
 $string['cc_content'] = 'The course {$a->coursefullname} has been completed by {$a->userfullname}. See the course {$a->coursereportlink}.';
